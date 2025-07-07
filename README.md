@@ -28,7 +28,7 @@ Install Ollama
 Pull the llama3.2 model (or use any supported model):
 
 ```bash
-ollama pull llama3.2
+ollama pull llama3.2:latest
 ````
 
 ### 1. Clone the Repository
