@@ -93,6 +93,8 @@ curl -X POST http://127.0.0.1:8000/api/summarize/ -H "Content-Type: application/
 ```json
 {"summary":"There is not enough information to summarize this conversation. The chat only contains two lines of text, and no specific details about the user's issue or order are provided."}
 ```
+## 🖼️ Demo Screenshot
 
+![Chat Summary API Demo](assets/demo.png)
 ---
 
