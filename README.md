@@ -18,6 +18,19 @@ This Django-based backend service accepts a sequence of user and bot messages, p
 
 Follow the steps below to set up the project on your local machine:
 
+## Local LLM setup
+
+You can use a local LLM instead of an external API. This is useful for privacy, cost-efficiency, or offline use.
+
+Prerequisites
+Install Ollama
+
+Pull the llama3.2 model (or use any supported model):
+
+```bash
+ollama pull llama3.2
+````
+
 ### 1. Clone the Repository
 
 ```bash
