@@ -51,7 +51,7 @@ The server will start at: `http://127.0.0.1:8000/`
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 To run unit tests for the `summarizer` app:
 
@@ -61,7 +61,7 @@ python manage.py test summarizer
 
 ---
 
-## 📬 API Usage
+## API Usage
 
 ### Endpoint
 
@@ -77,7 +77,6 @@ POST /api/summarize/
     {"sender": "user", "message": "Hi, I want to book a flight to Delhi."},
     {"sender": "bot", "message": "Sure. What date are you planning to travel?"},
     {"sender": "user", "message": "This Friday."},
-    ...
   ]
 }
 ```
