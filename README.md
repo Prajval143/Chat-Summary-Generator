@@ -21,7 +21,7 @@ Follow the steps below to set up the project on your local machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/Chat-Summary-Generator.git
+git clone https://github.com/Prajval143/Chat-Summary-Generator.git
 cd Chat-Summary-Generator
 ````
 
