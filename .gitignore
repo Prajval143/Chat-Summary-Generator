@@ -1,0 +1,15 @@
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+venv/
+*.sqlite3
+*.log
+*.pot
+*.py[cod]
+db.sqlite3
+/media
+/staticfiles
+.idea/
+
+
