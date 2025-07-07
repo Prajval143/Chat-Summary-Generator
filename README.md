@@ -69,32 +69,16 @@ python manage.py test summarizer
 POST /api/summarize/
 ```
 
-### Request Body (JSON)
-
-```json
-{
-  "chat": [
-    {"sender": "user", "message": "Hi, I want to book a flight to Delhi."},
-    {"sender": "bot", "message": "Sure. What date are you planning to travel?"},
-    {"sender": "user", "message": "This Friday."},
-  ]
-}
-```
-
-### Response
-
-```json
-{
-  "summary": "User wanted to book a flight to Delhi for Friday. Bot asked for travel details."
-}
-```
 
 ### Testing via cURL
 
 ```bash
-curl -X POST http://127.0.0.1:8000/api/summarize/ \
-  -H "Content-Type: application/json" \
-  -d '{"chat": [{"sender": "user", "message": "Hi"}, {"sender": "bot", "message": "Hello!"}]}'
+curl -X POST http://127.0.0.1:8000/api/summarize/ -H "Content-Type: application/json" -d "{\"chat\": [{\"role\": \"user\", \"message\": \"Hi, I need help with my order.\"}, {\"role\": \"bot\", \"message\": \"Sure, can you provide your order ID?\"}]}"
+
+```
+
+```json
+{"summary":"There is not enough information to summarize this conversation. The chat only contains two lines of text, and no specific details about the user's issue or order are provided."}
 ```
 
 ---
